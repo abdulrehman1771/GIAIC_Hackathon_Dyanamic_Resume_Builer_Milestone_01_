@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- CV Starts Here -->
+    <div class="resume" id="resume">
+        <h1 class="cvHeading" id="cvHeading">Curriculum Vitae</h1>
+        <div class="container2">
+
+            <!-- Section 1 Starts -->
+            <div class="main" id="main">
+                <div class="pic">
+                    <img src="./images/profile_image.jpg" alt="" title="profile photo">
+                </div>
+                <div class="contact formatting">
+                    <h1 class="contactHeading">Contact Details</h1>
+                    <hr>
+                    <div class="contactDetails"><br>
+                        <b>Contact Number:</b>
+                        <p id="cvContactNumber">+923123456789</p><br>
+                        <b>Email:</b>
+                        <p id="cvContactEmail">abd@gmail.com</p><br>
+                        <b>Address:</b>
+                        <p id="cvContactAddress">25 street, district central, karachi, pakistan.</p>
+                    </div>
+                    <div class="formatting" id="cvEducationDiv" contenteditable="true"><br>
+                        <h1 class="contactHeading">Education</h1>
+                        <hr><br>
+                        <b id="cvEducationLevel">Matriculation:</b>
+                        <p id="cvEducationInstitute">Dr. Mehmood Hussain Boys Sec. School</p><br>
+                        <span class="cvEducationSpan" id="cvEducationSpan"></span>
+                    </div>
+                    <button class="showHideButton" id="edUcation" type="button" data-target="cvEducationDiv">Show / Hide Education</button>
+                    <div id="Skills">
+                        <h1 class="contactHeading">Skills</h1>
+                        <hr><br>
+                        <ul id="cvSkills" contenteditable="true">
+                            <li>Skill</li>
+                            <li>Skill</li>
+                            <li>Skill</li>
+                            <li>Skill</li>
+                            <li>Skill</li>
+                            <li>Skill</li>
+                            <li>Skill</li>
+                            <span id="cvSkillSpan"></span>
+                        </ul>
+                    </div>
+                    <button class="showHideButton" id="sKill" type="button" data-target="Skills">Show / Hide Skill</button>
+                    <div id="Language">
+                        <h1 class="contactHeading">Languages</h1>
+                        <hr><br>
+                        <ul id="cvLanguages" contenteditable="true">
+                            <li>Language</li>
+                            <li>Language</li>
+                            <li>Language</li>
+                            <li>Language</li>
+                            <span id="cvLanguagesSpan"></span>
+                        </ul>
+                    </div>
+                    <button class="showHideButton" id="laNguage" type="button" data-target="Language">Show / Hide Language</button>
+                </div>
+            </div>
+            <!-- Section 1 Ends -->
+
+            <!-- Section 2 Starts -->
+            <div class="second">
+                <h1 class="cvName" id="cvName">JOHN DOE</h1>
+                <p class="cvNiche" id="cvNiche">Niche</p>
+                <p class="cvDescription" id="cvDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                    laborum voluptates reiciendis ipsa officia eius ut fugiat nulla asperiores accusamus aspernatur
+                    omnis laboriosam debitis. Dicta itaque porro deleniti incidunt quo.</p><br>
+
+                    <div class="cvExperience" id="cvExperience" contenteditable="true"
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 400;">
+                    <h1 class="contactHeading" id="contactHeading">Experience</h1>
+                    <hr>
+                    <ul>
+                        <li class="cvExperienceYear">2018</li>
+                        <li class="cvExperienceCompany">Company Name</li>
+                        <li class="cvExperiencePosition">Job Position</li>
+                        <br>
+                        <li class="cvExperienceYear">2018</li>
+                        <li class="cvExperienceCompany">Company Name</li>
+                        <li class="cvExperiencePosition">Job Position</li>
+                        <br>
+                        <li class="cvExperienceYear">2018</li>
+                        <li class="cvExperienceCompany">Company Name</li>
+                        <li class="cvExperiencePosition">Job Position</li>
+                        <br>
+                    </ul>
+                    <span id="cvExperienceSpan"></span>
+                    <br>
+                </div>
+                <button class="showHideButton" id="exPerience" type="button" data-target="cvExperience">Show / Hide Experience</button>
+            </div>
+        </div><br>
+
+        <!-- Color input element -->
+         <div class="coloPickerDiv">
+             <label for="colorPicker">Pick a color:</label>
+             <input type="color" id="colorPicker">
+        </div>
+        
+    </div>
+    <!-- Section 2 Ends -->
+    <!-- CV Ends Here -->
+     <script type="module" src="./script.js"></script>
+</body>
+
+</html>
